@@ -44,7 +44,7 @@ sudo apt-get install python3-venv
  * Install uwsgi on your virtual environment
  
  ```
- sudo apt-get install python3.6-dev
+ sudo apt-get install python3-dev
  sudo apt-get install build-essential libssl-dev libffi-dev python-dev
  pip install wheel
  pip install uwsgi
@@ -81,7 +81,7 @@ uwsgi_param  SERVER_PORT        $server_port;
 uwsgi_param  SERVER_NAME        $server_name;
 ```
 
-* Create NGINX config file at /etc/nginx/sites/available
+* Create NGINX config file at /etc/nginx/sites-available
 ```
 upstream django {
     server unix:///home/ubuntu/django-apache-nginx-uwsgi-vps-ubuntu/mysite.sock; 
