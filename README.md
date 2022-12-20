@@ -45,7 +45,7 @@ sudo apt-get install python3-venv
  
  ```
  sudo apt-get install python3-dev
- sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+ sudo apt-get install build-essential libssl-dev libffi-dev
  pip install wheel
  pip install uwsgi
 ```
